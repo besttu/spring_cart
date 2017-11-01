@@ -6,6 +6,6 @@ import com.cart.entity.TbUser;
 
 public interface UserService {
 
-	public List<TbUser> getAll();
+	public TbUser getUserbyId(Long id);
 
 }

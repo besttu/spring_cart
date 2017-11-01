@@ -14,10 +14,9 @@ public class UserServiceImpl implements UserService {
 	@Autowired
 	TbUserMapper userMapper;
 
-	public List<TbUser> getAll() {
+	public TbUser getUserbyId(Long id) {
 		// TODO Auto-generated method stub
-		List<TbUser> selectByExample = userMapper.selectByExample(null);
-		return selectByExample;
+		return userMapper.selectByPrimaryKey(id);
 	}
 
 }

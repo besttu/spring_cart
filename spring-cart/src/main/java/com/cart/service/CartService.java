@@ -30,8 +30,19 @@ public interface CartService {
 
 	public List<TbItem> showCart(HttpServletRequest request, HttpServletResponse response);
 
-	public void updateStatus(HttpServletRequest request, HttpServletResponse response,Long itemId, Boolean status);
+	public void updateStatus(HttpServletRequest request, HttpServletResponse response, Long itemId, Boolean status);
 
 	public void deleteByItemId(HttpServletRequest request, HttpServletResponse response, Long itemId);
 
+	public void ItemConvertCart(HttpServletRequest request, HttpServletResponse response, Long userId);
+
+	public void addCart(Long itemId, Long userId, Integer num);
+
+	public List<TbItem> showCart(Long userId);
+
+	public void update(Long itemId, Long userId, Integer num);
+
+	public void updateStatus(Long itemId, Long userId, Boolean status);
+
+	public void deleteByItemId(Long itemId, Long userId);
 }

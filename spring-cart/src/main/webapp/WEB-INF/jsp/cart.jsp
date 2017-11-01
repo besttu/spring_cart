@@ -19,7 +19,6 @@
    </script>
 <body> 
 <!--shortcut start-->
-<jsp:include page="commons/shortcut.jsp" />
 <!--shortcut end-->
 <div class="w w1 header clearfix">
 	<div id="logo"><a href="/"><img clstag="clickcart|keycount|xincart|logo" src="/images/taotao-logo.gif" title="返回淘淘商城首页" alt="返回淘淘商城首页"></a></div>

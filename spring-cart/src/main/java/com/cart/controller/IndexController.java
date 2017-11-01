@@ -15,14 +15,6 @@ public class IndexController {
 	@Autowired
 	UserService userService;
 
-	@RequestMapping("/index")
-	public String text() {
-		System.out.println("index");
-		List<TbUser> all = userService.getAll();
-		System.out.println(all);
-		return "index";
-	}
-
 	@RequestMapping("/{index}")
 	public String index(@PathVariable String index) {
 		System.out.println(index);
